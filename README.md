@@ -39,3 +39,24 @@ g++ main.cpp BigInt.cpp -o big_integer_system
 
 # Run the executable
 ./big_integer_system
+```
+## 💻 Usage Example
+Here is how you can use the library in your own code:
+
+C++
+
+#include "BigInt.h"
+
+int main() {
+    BigInt num1 = "123456789123456789";
+    BigInt num2 = 100;
+
+    // Automatic arbitrary-precision arithmetic
+    BigInt result = num1 * num2;
+
+    cout << "Result: " << result << endl;
+    return 0;
+}
+
+    return 0;
+}
